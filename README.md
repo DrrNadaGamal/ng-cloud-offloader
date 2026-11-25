@@ -21,4 +21,4 @@ Labels in English, Arabic (RTL), French and German (FR/DE are machine translatio
 - Tested against a local mock that implements the signature rules, not against live Cloudflare, Azure, AWS, Wasabi, Backblaze or DigitalOcean accounts. A live check with real credentials is still needed.
 - Path-style S3 addressing only. Files over a few hundred MB, multipart upload and private (signed-URL) buckets are not supported yet.
 - Offloading runs inline on upload and in bulk batches of 100; very large libraries need several runs.
-- Not yet tested with Elementor or Bricks.
+- Activation and front-end rendering checked beside real Elementor 4.4.2 (no errors); URL rewriting inside Elementor output was not checked against a real bucket. Not tested with Bricks.
